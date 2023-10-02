@@ -2,6 +2,10 @@ import banner from "../assets/banner.png";
 import { AiOutlineRight, AiFillStar } from "react-icons/ai";
 import asgaard from "../assets/asgaard.png";
 import outdoor from "../assets/outdoor.png";
+import prize from '../assets/prize.png';
+import warrant from '../assets/warrant.png';
+import free from '../assets/free.png';
+import support from '../assets/support.png'
 
 const Banner = () => {
   return (
@@ -84,6 +88,19 @@ const Banner = () => {
             <p className="font-semibold text-2xl py-2">Configuration</p>
             <p className="font-semibold text-2xl py-2">Upholstery Material</p>
             <p className="font-semibold text-2xl py-2">Upholstery Color</p>
+            <p className="font-bold text-3xl mt-10">Dimensions</p>
+            <p className="font-semibold text-2xl py-2 mt-3">Width</p>
+            <p className="font-semibold text-2xl py-2">Height</p>
+            <p className="font-semibold text-2xl py-2">Depth</p>
+            <p className="font-semibold text-2xl py-2">Weight</p>
+            <p className="font-semibold text-2xl py-2">Seat Height</p>
+            <p className="font-semibold text-2xl py-2">Leg Height</p>
+            <p className="font-bold text-3xl mt-10">Warranty</p>
+            <p className="font-semibold text-2xl py-2 mt-3">Warranty Summary</p>
+            <p className="font-semibold text-2xl py-2">Warranty Service Type</p>
+            <p className="font-semibold text-2xl py-2">Covered in Warranty</p>
+            <p className="font-semibold text-2xl py-2">Not Covered in Warranty</p>
+            <p className="font-semibold text-2xl py-2">Domestic Warranty</p>
           </div>
           <div className="col-span-3  border-r border-t border-gray-300">
             <p className="text-2xl py-12 px-8 font-semibold">1 sectional sofa</p>
@@ -92,6 +109,8 @@ const Banner = () => {
             <p className="text-2xl py-2 px-8 font-semibold">L-shaped</p>
             <p className="text-2xl py-2 px-8 font-semibold">Fabric + Cotton</p>
             <p className="text-2xl py-2 px-8 font-semibold">Bright Grey & Lion</p>
+            <p className="text-2xl py-2 px-8 font-semibold">1 Year Manufacturing Warranty</p>
+
           </div>
           <div className="col-span-3 border-r border-t border-gray-300">
           <p className="text-2xl py-12 px-8 font-semibold">1 Three Seater, 2 Single Seater</p>
@@ -102,6 +121,45 @@ const Banner = () => {
             <p className="text-2xl py-2 px-8 font-semibold">Bright Grey & Lion</p>
           </div>
 
+        </div>
+        <div className="bg-orange-100 grid grid-cols-12 h-64 mt-12 justify-center items-center">
+          <div className="col-span-3 ml-24">
+            <div className="flex">
+              <img src={prize} alt="High Quality" />
+              <div className="px-3">
+                <p className="text-2xl font-bold">High Quality</p>
+                <p className="text-2xl">crafted from top materials</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-span-3">
+            <div className="flex">
+              <img src={warrant} alt="High Quality" />
+              <div className="px-3">
+                <p className="text-2xl font-bold">Warranty Protection</p>
+                <p className="text-2xl">Over 2 years</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-span-3">
+            <div className="flex">
+              <img src={free} alt="High Quality" />
+              <div className="px-3">
+                <p className="text-2xl font-bold">Free Shipping</p>
+                <p className="text-2xl">Order over $150</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-span-3">
+            <div className="flex">
+              <img src={support} alt="High Quality" />
+              <div className="px-3">
+                <p className="text-2xl font-bold">24/7 Support</p>
+                <p className="text-2xl">Dedicated support</p>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>
