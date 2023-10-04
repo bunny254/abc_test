@@ -13,7 +13,7 @@ const Banner = () => {
       <div className="hidden xl:grid">
         <div className="flex mt-8 relative">
           <img src={banner} alt="Banner" className="object-cover px-10" />
-          <div className="absolute top-36 left-[32%] mt-4 bg-gray-300 w-[40%] h-24">
+          <div className="absolute top-28 left-[32%] mt-4 bg-gray-300 w-[40%] h-24">
             <p className="text-6xl font-bold text-center mb-2">
               Product Comparison
             </p>

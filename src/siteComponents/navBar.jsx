@@ -14,7 +14,7 @@ const NavBar = () => {
                     </div>
                 </div>
                 <div className='col-span-4 col-start-5'>
-                    <div className='flex gap-28 text-2xl font-semibold'>
+                    <div className='flex gap-16 text-2xl font-semibold'>
                     <p>Home</p>
                     <p>Shop</p>
                     <p>About</p>
@@ -22,11 +22,11 @@ const NavBar = () => {
                     </div>
                 </div>
                 <div className='col-span-4 px-28'>
-                    <div className='flex gap-16'>
-                        <FaRegUser size="38px"/>
-                        <BiSearch size="40px"/>
-                        <AiOutlineHeart size="40px"/>
-                        <AiOutlineShoppingCart size="40px"/>
+                    <div className='flex gap-8'>
+                        <FaRegUser size="28px"/>
+                        <BiSearch size="32px"/>
+                        <AiOutlineHeart size="32px"/>
+                        <AiOutlineShoppingCart size="32px"/>
                     </div>
                 </div>
             </div>
