@@ -104,7 +104,7 @@ const SingleProduct = () => {
                     <p className="px-2 text-xl">Add To Cart</p>
                   </div>
                   <div className="flex border border-gray-400 p-2 rounded">
-                    <p className="px-2 text-xl">+ Compare</p>
+                    <Link to="/product-comparison"><p className="px-2 text-xl">Compare</p></Link>
                   </div>
                 </div>
                 <div className="mt-8 grid gap-4">

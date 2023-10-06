@@ -133,6 +133,23 @@ const Banner = () => {
             <p className="text-2xl py-2 px-8 font-semibold">
               1 Year Manufacturing Warranty
             </p>
+            <p className="text-2xl mt-24 px-8 font-semibold">265.36cm</p>
+            <p className="text-2xl mt-5 py-2 px-8 font-semibold">76cm</p>
+            <p className="text-2xl py-2 px-8 font-semibold">176.76cm</p>
+            <p className="text-2xl py-2 px-8 font-semibold">45 KG</p>
+            <p className="text-2xl py-2 px-8 font-semibold">
+              41.52 cm
+            </p>
+            <p className="text-2xl py-2 px-8 font-semibold">
+              5.46 cm
+            </p>
+            <p className="text-lg mt-24 px-8 font-semibold">1 Year Manufacturing Warranty</p>
+            <p className="text-lg mt-5 py-2 px-8 font-semibold">For Warranty claims or Any product related issues please Email at operations@trevfurniture.com</p>
+            <p className="text-lg py-2 px-8 font-semibold">Warrant aganist manifactiring defect</p>
+            <p className="text-lg py-2 px-8 font-semibold">The warranty does not cover any damages due to usage of product beyond its intended use and Wear + Tear in the natural course of product usage.</p>
+            <p className="text-lg py-2 px-8 font-semibold">
+              1 Year
+            </p>
           </div>
           <div className="col-span-3 border-r border-t border-gray-300">
             <p className="text-2xl py-12 px-8 font-semibold">
@@ -144,6 +161,23 @@ const Banner = () => {
             <p className="text-2xl py-2 px-8 font-semibold">Fabric + Cotton</p>
             <p className="text-2xl py-2 px-8 font-semibold">
               Bright Grey & Lion
+            </p>
+            <p className="text-2xl mt-32 px-8 font-semibold">265.36cm</p>
+            <p className="text-2xl mt-5 py-2 px-8 font-semibold">76cm</p>
+            <p className="text-2xl py-2 px-8 font-semibold">176.76cm</p>
+            <p className="text-2xl py-2 px-8 font-semibold">45 KG</p>
+            <p className="text-2xl py-2 px-8 font-semibold">
+              41.52 cm
+            </p>
+            <p className="text-2xl py-2 px-8 font-semibold">
+              5.46 cm
+            </p>
+            <p className="text-lg mt-24 px-8 font-semibold">1 Year Manufacturing Warranty</p>
+            <p className="text-lg mt-5 py-2 px-8 font-semibold">For Warranty claims or Any product related issues please Email at operations@trevfurniture.com</p>
+            <p className="text-lg py-2 px-8 font-semibold">Warrant aganist manifactiring defect</p>
+            <p className="text-lg py-2 px-8 font-semibold">The warranty does not cover any damages due to usage of product beyond its intended use and Wear + Tear in the natural course of product usage.</p>
+            <p className="text-lg py-2 px-8 font-semibold">
+              1 Year
             </p>
           </div>
         </div>
