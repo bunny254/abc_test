@@ -1,6 +1,14 @@
 //Importing app dependencies
 import { createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";
 
+//Importing react tostify pop-up
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+//Importing redux dependencies
+import  {Provider} from "react-redux";
+import store from "./store/store";
+
 
 //Importing All App Components
 import Banner from "./siteComponents/banner"
@@ -17,11 +25,13 @@ import Home from "./siteComponents/home";
 //Creating App Layout
 const Layout=()=>{
   return(
+    <Provider store={store}>
   <div>
     <NavBar/>
     <Outlet/>
     <Footer/>
   </div>
+  </Provider>
   )
 }
 
@@ -54,7 +64,11 @@ const router = createBrowserRouter([
       {
         path:"/checkout",
         element:<Checkout/>
-      }
+      },
+      {
+        path:"/product-comparison",
+        element:<Banner/>
+      },
     ]
   }
 ])
@@ -65,6 +79,7 @@ function App() {
   return (
     <>
       <div>
+        <ToastContainer/>
         <RouterProvider router={router}/>
       </div>
       
