@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { AiOutlineRight, AiFillStar } from "react-icons/ai";
 import sofa from "../assets/inside-weather-dbH_vy7vICE-unsplash.jpg";
 import { BsFacebook, BsLinkedin, BsTwitter } from "react-icons/bs";
@@ -8,7 +9,7 @@ const SingleProduct = () => {
       <div className="hidden xl:grid">
         <div className="bg-yellow-50 mt-8">
           <div className="px-20 flex items-center py-8 ">
-            <p className="px-4 mt-1">Home</p>
+            <Link to="/"><p className="px-4 mt-1">Home</p></Link>
             <AiOutlineRight size="14px" className="mt-2" />
             <p className="mt-1 px-4">Shop</p>
             <AiOutlineRight className="mt-2" size="14px" />

@@ -6,6 +6,7 @@ import prize from '../assets/prize.png';
 import warrant from '../assets/warrant.png';
 import free from '../assets/free.png';
 import support from '../assets/support.png';
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -18,7 +19,9 @@ const Banner = () => {
               Product Comparison
             </p>
             <div className="flex justify-center">
+              <Link to="/">
               <p className="text-2xl font-semibold">Home</p>
+              </Link>
               <AiOutlineRight size="20px" className="mt-2 font-bold" />
               <p className="text-2xl">comparison</p>
             </div>

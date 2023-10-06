@@ -11,6 +11,7 @@ import store from "./store/store";
 
 
 //Importing All App Components
+import { ScrollRestoration } from "react-router-dom";
 import Banner from "./siteComponents/banner"
 import Footer from "./siteComponents/footer";
 import NavBar from "./siteComponents/navBar";
@@ -27,6 +28,7 @@ const Layout=()=>{
   return(
     <Provider store={store}>
   <div>
+    <ScrollRestoration/>
     <NavBar/>
     <Outlet/>
     <Footer/>
@@ -50,7 +52,7 @@ const router = createBrowserRouter([
         element:<Shop/>
       },
       {
-        path:"/single-product.",
+        path:"/single-product",
         element:<SingleProduct/>
       },
       {

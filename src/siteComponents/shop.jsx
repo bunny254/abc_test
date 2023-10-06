@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import banner from "../assets/banner.png";
 import { AiOutlineRight } from "react-icons/ai";
 import { VscSettings } from "react-icons/vsc";
@@ -122,7 +123,7 @@ const Shop = () => {
           <div className="absolute top-28 left-[32%] mt-4 bg-gray-300 w-[40%] h-24">
             <p className="text-6xl font-bold text-center mb-2">Shop</p>
             <div className="flex justify-center items-center">
-              <p className="text-2xl font-semibold">Home</p>
+              <Link to="/"><p className="text-2xl font-semibold">Home</p></Link>
               <AiOutlineRight size="18px" className="mt-2 font-bold" />
               <p className="text-xl mt-1">Shop</p>
             </div>
@@ -163,10 +164,12 @@ const Shop = () => {
               return (
                 <div className="col-span-3 group">
                   <div className="relative z-10 group">
+                  <Link to="/single-product">
                     <img src={sofa} alt="Yellow Sofa" />
                     <div className="absolute flex top-4 right-4 bg-red-300 rounded-full h-14 w-14 justify-center items-center">
                       <p className="text-white font-semibold">-30%</p>
                     </div>
+                    </Link>
                   </div>
                   <div className="bg-gray-100 px-4 py-3 group">
                     <p className="font-semibold">Syltherine</p>

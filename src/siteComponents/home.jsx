@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import homeBanner from "../assets/homeBanner.jpg";
 import sofa from "../assets/inside-weather-dbH_vy7vICE-unsplash.jpg";
 
@@ -5,9 +6,9 @@ const Home = () => {
   return (
     <div>
       <div className="hidden xl:grid">
-        <div className="relative mt-4">
+      <div className="relative z-0 mt-4">
           <img
-            className=" h-[50%] w-full object-cover"
+            className=" h-[40%] w-full object-cover"
             src={homeBanner}
             alt="Home Banner"
           />
@@ -23,12 +24,12 @@ const Home = () => {
                 Tempora repellendus assumenda odio animi nemo quas.
               </p>
               <button className="bg-yellow-600 w-40 p-2 mt-3">
-                <p className="text-white">BUY NOW</p>
+                <Link to="/shop"><p className="text-white">BUY NOW</p></Link>
               </button>
             </div>
           </div>
         </div>
-        <div className="grid">
+        <div className="flex flex-col">
           <div className="flex flex-col justify-center items-center">
             <h1 className="font-bold text-2xl">Browse The Range</h1>
             <p>

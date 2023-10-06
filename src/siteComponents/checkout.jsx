@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
 import banner from "../assets/banner.png";
 import { AiOutlineRight } from "react-icons/ai";
 import prize from '../assets/prize.png';
 import warrant from '../assets/warrant.png';
 import free from '../assets/free.png';
 import support from '../assets/support.png'
+
 
 const Checkout = () => {
   return (
@@ -13,7 +15,7 @@ const Checkout = () => {
         <div className="absolute top-28 left-[32%] mt-4 bg-gray-300 w-[40%] h-24">
           <p className="text-6xl font-bold text-center mb-2">Checkout</p>
           <div className="flex justify-center items-center">
-            <p className="text-2xl font-semibold">Home</p>
+            <Link to="/"><p className="text-2xl font-semibold">Home</p></Link>
             <AiOutlineRight size="18px" className="mt-2 font-bold" />
             <p className="text-xl mt-1">Checkout</p>
           </div>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import banner from "../assets/banner.png";
 import { AiOutlineRight, AiFillClockCircle } from "react-icons/ai";
 import { FaLocationDot } from "react-icons/fa6";
@@ -15,7 +16,7 @@ const Contact = () => {
         <div className="absolute top-28 left-[32%] mt-4 bg-gray-300 w-[40%] h-24">
           <p className="text-6xl font-bold text-center mb-2">Contact</p>
           <div className="flex justify-center">
-            <p className="text-2xl font-semibold">Home</p>
+            <Link to="/"><p className="text-2xl font-semibold">Home</p></Link>
             <AiOutlineRight size="20px" className="mt-2 font-bold" />
             <p className="text-2xl">Contact</p>
           </div>

@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import banner from "../assets/banner.png";
 import { AiOutlineRight} from "react-icons/ai";
 import {RiDeleteBin7Fill} from 'react-icons/ri';
@@ -7,7 +8,30 @@ import warrant from '../assets/warrant.png';
 import free from '../assets/free.png';
 import support from '../assets/support.png'
 
+//Importing Redux dependencies
+import { useSelector, useDispatch } from "react-redux";
+import { getTotal, removeItem } from "../store/cartSlice";
+
 const Cart = () => {
+  //Display all items in cart
+  const cartProducts = useSelector((state) => state.cart.cartItems);
+  const cartTotal = useSelector((state) => state.cart.cartTotalAmount);
+
+   //Remove item from cart
+   const dispatch = useDispatch();
+
+   useEffect(() => {
+    dispatch(getTotal());
+
+    window.Net_Total = 100;
+    // eslint-disable-next-line
+  }, [cartTotal]);
+
+  const removeToCart = (id) => {
+    //dispatch remove item from cart action
+    dispatch(removeItem(id));
+  };
+
   return (
     <div>
         <div className='hidden xl:grid'>
@@ -25,7 +49,7 @@ const Cart = () => {
           </div>
         </div>
         <div className="px-20">
-            <div className="grid grid-cols-12 mt-8 gap-8">
+          {cartProducts.length > 0 ? (<div className="grid grid-cols-12 mt-8 gap-8">
                 <div className="col-span-9">
                     <div className="flex gap-28 font-semibold bg-orange-100">
                         <p className="ml-44 py-2">Product</p>
@@ -45,7 +69,7 @@ const Cart = () => {
                             </div>
                             <div className="flex ml-20">
                             <p>Rs.250,000.00</p>
-                            <RiDeleteBin7Fill size="25px" className="text-orange-100"/>
+                            <RiDeleteBin7Fill size="25px" className="text-orange-100" onClick={() => removeToCart(product.id)}/>
                             </div>
                         </div>
                         
@@ -67,7 +91,26 @@ const Cart = () => {
                         </button>
                     </div>
                 </div>
-            </div>
+            </div>):(
+              <div>
+                <div className="flex flex-col justify-center">
+                <h1 className="font-bold text-center text-2xl">
+                  YOUR SHOPPING BAG IS EMPTY
+                </h1>
+                <h1 className="mt-4 text-center italic">
+                  Let us help you fill it with what <br /> you love the most.
+                </h1>
+                <div className="flex flex-col gap-3 justify-center mt-4">
+                  <button className="border border-black w-3/4 ml-8 p-3 text-sm hover:bg-black hover:text-white">
+                    CONTINUE SHOPPING
+                  </button>
+                  <button className="border border-black w-3/4 ml-8 p-3 text-sm hover:bg-black hover:text-white">
+                    VISIT HOME PAGE
+                  </button>
+                </div>
+                </div>
+              </div>
+            )}
 
         </div>
         <div className="bg-orange-100 grid grid-cols-12 h-64 mt-12 justify-center items-center">
