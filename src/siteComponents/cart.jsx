@@ -101,9 +101,9 @@ const Cart = () => {
                 <h1 className="mt-4 text-center italic">
                   Let us help you fill it with what <br /> you love the most.
                 </h1>
-                <div className="flex flex-col gap-3 justify-center mt-4">
+                <div className="flex flex-col gap-3 justify-center mt-4 ml-[30%]">
                   <button className="border border-black w-1/2 ml-8 p-3 text-sm hover:bg-black hover:text-white">
-                    CONTINUE SHOPPING
+                    <Link to="/shop">CONTINUE SHOPPING </Link>
                   </button>
                   <button className="border border-black w-1/2 ml-8 p-3 text-sm hover:bg-black hover:text-white">
                     <Link to ="/">VISIT HOME PAGE</Link>
