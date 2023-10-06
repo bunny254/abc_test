@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import banner from "../assets/banner.png";
 import { AiOutlineRight} from "react-icons/ai";
 import {RiDeleteBin7Fill} from 'react-icons/ri';
@@ -92,7 +93,7 @@ const Cart = () => {
                     </div>
                 </div>
             </div>):(
-              <div>
+              <div className="mt-8">
                 <div className="flex flex-col justify-center">
                 <h1 className="font-bold text-center text-2xl">
                   YOUR SHOPPING BAG IS EMPTY
@@ -101,11 +102,11 @@ const Cart = () => {
                   Let us help you fill it with what <br /> you love the most.
                 </h1>
                 <div className="flex flex-col gap-3 justify-center mt-4">
-                  <button className="border border-black w-3/4 ml-8 p-3 text-sm hover:bg-black hover:text-white">
+                  <button className="border border-black w-1/2 ml-8 p-3 text-sm hover:bg-black hover:text-white">
                     CONTINUE SHOPPING
                   </button>
-                  <button className="border border-black w-3/4 ml-8 p-3 text-sm hover:bg-black hover:text-white">
-                    VISIT HOME PAGE
+                  <button className="border border-black w-1/2 ml-8 p-3 text-sm hover:bg-black hover:text-white">
+                    <Link to ="/">VISIT HOME PAGE</Link>
                   </button>
                 </div>
                 </div>
