@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div>
       <div className="hidden xl:grid">
-      <div className="relative z-0 mt-4">
+        <div className="relative z-0 mt-4">
           <img
             className=" h-[40%] w-full object-cover"
             src={homeBanner}
@@ -24,7 +24,9 @@ const Home = () => {
                 Tempora repellendus assumenda odio animi nemo quas.
               </p>
               <button className="bg-yellow-600 w-40 p-2 mt-3">
-                <Link to="/shop"><p className="text-white">BUY NOW</p></Link>
+                <Link to="/shop">
+                  <p className="text-white">BUY NOW</p>
+                </Link>
               </button>
             </div>
           </div>
@@ -54,90 +56,113 @@ const Home = () => {
             </div>
           </div>
           <div className="px-10 mt-8">
-        <div className="grid grid-cols-12 gap-6">
-            <div className="col-start-6 col-span-6">
+            <div className="grid grid-cols-12 gap-6">
+              <div className="col-start-6 col-span-6">
                 <h1 className="font-bold text-2xl">Our Products</h1>
-            </div>
-            <div className="col-span-3">
+              </div>
+              <div className="col-span-3">
                 <div className="relative z-10">
-                    <img src={sofa} alt="Yellow Sofa"/>
-                    <div className="absolute flex top-4 right-4 bg-red-300 rounded-full h-14 w-14 justify-center items-center">
-                        <p className="text-white font-semibold">-30%</p>
-                    </div>
+                  <img src={sofa} alt="Yellow Sofa" />
+                  <div className="absolute flex top-4 right-4 bg-red-300 rounded-full h-14 w-14 justify-center items-center">
+                    <p className="text-white font-semibold">-30%</p>
+                  </div>
                 </div>
                 <div className="bg-gray-100 px-4 py-3">
-                    <p className="font-semibold">Syltherine</p>
-                    <p>Stylish cafe chair</p>
-                    <p className="font-semibold">Rp 2,500,000</p>
+                  <p className="font-semibold">Syltherine</p>
+                  <p>Stylish cafe chair</p>
+                  <p className="font-semibold">Rp 2,500,000</p>
                 </div>
-            </div>
-            <div className="col-span-3">
+              </div>
+              <div className="col-span-3">
                 <div>
-                    <img src={sofa} alt="Yellow Sofa"/>
+                  <img src={sofa} alt="Yellow Sofa" />
                 </div>
                 <div className="bg-gray-100 px-4 py-3">
-                    <p className="font-semibold">Syltherine</p>
-                    <p>Stylish cafe chair</p>
-                    <p className="font-semibold">Rp 2,500,000</p>
+                  <p className="font-semibold">Syltherine</p>
+                  <p>Stylish cafe chair</p>
+                  <p className="font-semibold">Rp 2,500,000</p>
                 </div>
-            </div>
-            <div className="col-span-3">
+              </div>
+              <div className="col-span-3">
                 <div>
-                    <img src={sofa} alt="Yellow Sofa"/>
+                  <img src={sofa} alt="Yellow Sofa" />
                 </div>
                 <div className="bg-gray-100 px-4 py-3">
-                    <p className="font-semibold">Syltherine</p>
-                    <p>Stylish cafe chair</p>
-                    <p className="font-semibold">Rp 2,500,000</p>
+                  <p className="font-semibold">Syltherine</p>
+                  <p>Stylish cafe chair</p>
+                  <p className="font-semibold">Rp 2,500,000</p>
                 </div>
-            </div>
-            <div className="col-span-3">
+              </div>
+              <div className="col-span-3">
                 <div>
-                    <img src={sofa} alt="Yellow Sofa"/>
+                  <img src={sofa} alt="Yellow Sofa" />
                 </div>
                 <div className="bg-gray-100 px-4 py-3">
-                    <p className="font-semibold">Syltherine</p>
-                    <p>Stylish cafe chair</p>
-                    <p className="font-semibold">Rp 2,500,000</p>
+                  <p className="font-semibold">Syltherine</p>
+                  <p>Stylish cafe chair</p>
+                  <p className="font-semibold">Rp 2,500,000</p>
                 </div>
+              </div>
             </div>
-            
-        </div>
-        <div className="flex justify-center mt-4">
-        <button className="px-1 py-2 w-48 border-yellow-100 border"><p className="text-yellow-400">Show More</p></button>
-        </div>
+            <div className="flex justify-center mt-4">
+              <button className="px-1 py-2 w-48 border-yellow-100 border">
+                <p className="text-yellow-400">Show More</p>
+              </button>
+            </div>
             <div className="flex justify-center mt-12">
-                <div>
+              <div>
                 <p className="text-center">share your setup with</p>
                 <p className="font-bold text-3xl">#FuniroFurniture</p>
-                </div>        
+              </div>
             </div>
             <div className="grid grid-cols-12">
-                <div className="col-span-4">
-                    <div className="flex gap-3">
-                            <img src={sofa} alt="Gallery" className="w-16 h-96 object-cover"/>
-                            <img src={sofa} alt="Gallery" className="h-96"/>
-                    </div>
-                    <div className="flex gap-3 mt-3">
-                            <img src={sofa} alt="Gallery" className="w-40 h-96 object-cover"/>
-                            <img src={sofa} alt="Gallery" className="h-60"/>
-                    </div>
+              <div className="col-span-4">
+                <div className="flex gap-3">
+                  <img
+                    src={sofa}
+                    alt="Gallery"
+                    className="w-16 h-96 object-cover"
+                  />
+                  <img src={sofa} alt="Gallery" className="h-96" />
                 </div>
-                <div className="col-span-8 px-4">
-                    <div className="flex gap-3">
-                            <img src={sofa} alt="Gallery" className="w-60 h-96 object-cover mt-16"/>
-                            <img src={sofa} alt="Gallery" className="w-60 h-96 object-cover mt-8"/>
-                            <img src={sofa} alt="Gallery" className="w-60 h-96 object-cover mt-4"/>
-                            
-                    </div>
-                    <div className="flex gap-3 mt-3 ml-64">
-                            <img src={sofa} alt="Gallery" className="w-40 h-96 object-cover"/>
-                            <img src={sofa} alt="Gallery" className="h-60"/>
-                    </div>
+                <div className="flex gap-3 mt-3">
+                  <img
+                    src={sofa}
+                    alt="Gallery"
+                    className="w-40 h-96 object-cover"
+                  />
+                  <img src={sofa} alt="Gallery" className="h-60" />
                 </div>
-
+              </div>
+              <div className="col-span-8 px-4">
+                <div className="flex gap-3">
+                  <img
+                    src={sofa}
+                    alt="Gallery"
+                    className="w-60 h-96 object-cover mt-16"
+                  />
+                  <img
+                    src={sofa}
+                    alt="Gallery"
+                    className="w-60 h-96 object-cover mt-8"
+                  />
+                  <img
+                    src={sofa}
+                    alt="Gallery"
+                    className="w-60 h-96 object-cover mt-4"
+                  />
+                </div>
+                <div className="flex gap-3 mt-3 ml-64">
+                  <img
+                    src={sofa}
+                    alt="Gallery"
+                    className="w-40 h-96 object-cover"
+                  />
+                  <img src={sofa} alt="Gallery" className="h-60" />
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
         </div>
       </div>
     </div>

@@ -1,12 +1,16 @@
+//Importing assets and dependencies
+
 import { Link } from "react-router-dom";
 import banner from "../assets/banner.png";
 import { AiOutlineRight, AiFillClockCircle } from "react-icons/ai";
 import { FaLocationDot } from "react-icons/fa6";
 import { BsFillTelephoneFill } from "react-icons/bs";
-import prize from '../assets/prize.png';
-import warrant from '../assets/warrant.png';
-import free from '../assets/free.png';
-import support from '../assets/support.png';
+import prize from "../assets/prize.png";
+import warrant from "../assets/warrant.png";
+import free from "../assets/free.png";
+import support from "../assets/support.png";
+
+//Creating Contact Component
 
 const Contact = () => {
   return (
@@ -16,7 +20,9 @@ const Contact = () => {
         <div className="absolute top-28 left-[32%] mt-4 bg-gray-300 w-[40%] h-24">
           <p className="text-6xl font-bold text-center mb-2">Contact</p>
           <div className="flex justify-center">
-            <Link to="/"><p className="text-2xl font-semibold">Home</p></Link>
+            <Link to="/">
+              <p className="text-2xl font-semibold">Home</p>
+            </Link>
             <AiOutlineRight size="20px" className="mt-2 font-bold" />
             <p className="text-2xl">Contact</p>
           </div>
@@ -109,52 +115,51 @@ const Contact = () => {
               />
             </div>
             <div className="mt-5">
-                <button className="rounded px-6 py-2 bg-yellow-200 w-48">
-                    <p className="text-white font-bold">Submit</p>
-                </button>
+              <button className="rounded px-6 py-2 bg-yellow-200 w-48">
+                <p className="text-white font-bold">Submit</p>
+              </button>
             </div>
           </div>
         </div>
       </div>
       <div className="bg-orange-100 grid grid-cols-12 h-64 mt-12 justify-center items-center gap-12">
-          <div className="col-span-3 ml-24">
-            <div className="flex">
-              <img src={prize} alt="High Quality" />
-              <div className="px-3">
-                <p className="text-2xl font-bold">High Quality</p>
-                <p className="text-2xl">crafted from top materials</p>
-              </div>
+        <div className="col-span-3 ml-24">
+          <div className="flex">
+            <img src={prize} alt="High Quality" />
+            <div className="px-3">
+              <p className="text-2xl font-bold">High Quality</p>
+              <p className="text-2xl">crafted from top materials</p>
             </div>
           </div>
-          <div className="col-span-3">
-            <div className="flex">
-              <img src={warrant} alt="High Quality" />
-              <div className="px-3">
-                <p className="text-2xl font-bold">Warranty Protection</p>
-                <p className="text-2xl">Over 2 years</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-span-3">
-            <div className="flex">
-              <img src={free} alt="High Quality" />
-              <div className="px-3">
-                <p className="text-2xl font-bold">Free Shipping</p>
-                <p className="text-2xl">Order over $150</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-span-3">
-            <div className="flex">
-              <img src={support} alt="High Quality" />
-              <div className="px-3">
-                <p className="text-2xl font-bold">24/7 Support</p>
-                <p className="text-2xl">Dedicated support</p>
-              </div>
-            </div>
-          </div>
-          
         </div>
+        <div className="col-span-3">
+          <div className="flex">
+            <img src={warrant} alt="High Quality" />
+            <div className="px-3">
+              <p className="text-2xl font-bold">Warranty Protection</p>
+              <p className="text-2xl">Over 2 years</p>
+            </div>
+          </div>
+        </div>
+        <div className="col-span-3">
+          <div className="flex">
+            <img src={free} alt="High Quality" />
+            <div className="px-3">
+              <p className="text-2xl font-bold">Free Shipping</p>
+              <p className="text-2xl">Order over $150</p>
+            </div>
+          </div>
+        </div>
+        <div className="col-span-3">
+          <div className="flex">
+            <img src={support} alt="High Quality" />
+            <div className="px-3">
+              <p className="text-2xl font-bold">24/7 Support</p>
+              <p className="text-2xl">Dedicated support</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

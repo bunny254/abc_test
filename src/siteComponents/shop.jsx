@@ -1,3 +1,4 @@
+//Importing assets and Dependencies
 import { Link } from "react-router-dom";
 import banner from "../assets/banner.png";
 import { AiOutlineRight } from "react-icons/ai";
@@ -10,6 +11,8 @@ import sofa from "../assets/inside-weather-dbH_vy7vICE-unsplash.jpg";
 import { useDispatch } from "react-redux";
 import { addItem } from "../store/cartSlice";
 
+//Creating Shop Component
+
 const Shop = () => {
   const dispatch = useDispatch();
 
@@ -19,6 +22,7 @@ const Shop = () => {
     dispatch(addItem(product));
   };
 
+  //Fake data to mock one that's coming from an API
   const data = [
     {
       id: 1,
@@ -26,7 +30,7 @@ const Shop = () => {
       title: "Syltherine",
       description: "Stylish cafe chair",
       price: 250000,
-      discount:"-30%"
+      discount: "-30%",
     },
     {
       id: 2,
@@ -41,7 +45,7 @@ const Shop = () => {
       title: "Syltherine",
       description: "Stylish cafe chair",
       price: 250000,
-      discount:"-30%"
+      discount: "-30%",
     },
     {
       id: 4,
@@ -49,7 +53,7 @@ const Shop = () => {
       title: "Syltherine",
       description: "Stylish cafe chair",
       price: 250000,
-      new:true
+      new: true,
     },
     {
       id: 5,
@@ -57,7 +61,7 @@ const Shop = () => {
       title: "Syltherine",
       description: "Stylish cafe chair",
       price: 250000,
-      discount:"-30%"
+      discount: "-30%",
     },
     {
       id: 6,
@@ -72,7 +76,7 @@ const Shop = () => {
       title: "Syltherine",
       description: "Stylish cafe chair",
       price: 250000,
-      discount:"-30%"
+      discount: "-30%",
     },
     {
       id: 8,
@@ -80,7 +84,7 @@ const Shop = () => {
       title: "Syltherine",
       description: "Stylish cafe chair",
       price: 250000,
-      new:true
+      new: true,
     },
     {
       id: 10,
@@ -88,7 +92,7 @@ const Shop = () => {
       title: "Syltherine",
       description: "Stylish cafe chair",
       price: 150000,
-      discount:"-30%"
+      discount: "-30%",
     },
     {
       id: 11,
@@ -103,7 +107,7 @@ const Shop = () => {
       title: "Syltherine",
       description: "Stylish cafe chair",
       price: 150000,
-      discount:"-30%"
+      discount: "-30%",
     },
     {
       id: 13,
@@ -111,7 +115,7 @@ const Shop = () => {
       title: "Syltherine",
       description: "Stylish cafe chair",
       price: 150000,
-      new:true
+      new: true,
     },
   ];
 
@@ -123,7 +127,9 @@ const Shop = () => {
           <div className="absolute top-28 left-[32%] mt-4 bg-gray-300 w-[40%] h-24">
             <p className="text-6xl font-bold text-center mb-2">Shop</p>
             <div className="flex justify-center items-center">
-              <Link to="/"><p className="text-2xl font-semibold">Home</p></Link>
+              <Link to="/">
+                <p className="text-2xl font-semibold">Home</p>
+              </Link>
               <AiOutlineRight size="18px" className="mt-2 font-bold" />
               <p className="text-xl mt-1">Shop</p>
             </div>
@@ -164,11 +170,11 @@ const Shop = () => {
               return (
                 <div className="col-span-3 group">
                   <div className="relative z-10 group">
-                  <Link to="/single-product">
-                    <img src={sofa} alt="Yellow Sofa" />
-                    <div className="absolute flex top-4 right-4 bg-red-300 rounded-full h-14 w-14 justify-center items-center">
-                      <p className="text-white font-semibold">-30%</p>
-                    </div>
+                    <Link to="/single-product">
+                      <img src={sofa} alt="Yellow Sofa" />
+                      <div className="absolute flex top-4 right-4 bg-red-300 rounded-full h-14 w-14 justify-center items-center">
+                        <p className="text-white font-semibold">-30%</p>
+                      </div>
                     </Link>
                   </div>
                   <div className="bg-gray-100 px-4 py-3 group">

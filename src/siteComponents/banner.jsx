@@ -1,13 +1,16 @@
+//Importing assets and dependencies
+
 import banner from "../assets/banner.png";
 import { AiOutlineRight, AiFillStar } from "react-icons/ai";
 import asgaard from "../assets/asgaard.png";
 import outdoor from "../assets/outdoor.png";
-import prize from '../assets/prize.png';
-import warrant from '../assets/warrant.png';
-import free from '../assets/free.png';
-import support from '../assets/support.png';
+import prize from "../assets/prize.png";
+import warrant from "../assets/warrant.png";
+import free from "../assets/free.png";
+import support from "../assets/support.png";
 import { Link } from "react-router-dom";
 
+//Creating Product Comparison Component
 const Banner = () => {
   return (
     <div>
@@ -20,7 +23,7 @@ const Banner = () => {
             </p>
             <div className="flex justify-center">
               <Link to="/">
-              <p className="text-2xl font-semibold">Home</p>
+                <p className="text-2xl font-semibold">Home</p>
               </Link>
               <AiOutlineRight size="20px" className="mt-2 font-bold" />
               <p className="text-2xl">comparison</p>
@@ -74,8 +77,17 @@ const Banner = () => {
           <div className="col-span-2">
             <p className="font-bold text-2xl mt-12">Add A Product</p>
             <button className="rounded p-2 bg-yellow-600 w-72 mt-4">
-              <label htmlFor="sofas" className="text-white font-bold px-8 text-xl">Choose a product</label>
-              <select className="bg-transparent text-white" name="sofas" id="sofas">
+              <label
+                htmlFor="sofas"
+                className="text-white font-bold px-8 text-xl"
+              >
+                Choose a product
+              </label>
+              <select
+                className="bg-transparent text-white"
+                name="sofas"
+                id="sofas"
+              >
                 <option value="volvo"></option>
                 <option value="saab">1</option>
               </select>
@@ -102,28 +114,38 @@ const Banner = () => {
             <p className="font-semibold text-2xl py-2 mt-3">Warranty Summary</p>
             <p className="font-semibold text-2xl py-2">Warranty Service Type</p>
             <p className="font-semibold text-2xl py-2">Covered in Warranty</p>
-            <p className="font-semibold text-2xl py-2">Not Covered in Warranty</p>
+            <p className="font-semibold text-2xl py-2">
+              Not Covered in Warranty
+            </p>
             <p className="font-semibold text-2xl py-2">Domestic Warranty</p>
           </div>
           <div className="col-span-3  border-r border-t border-gray-300">
-            <p className="text-2xl py-12 px-8 font-semibold">1 sectional sofa</p>
+            <p className="text-2xl py-12 px-8 font-semibold">
+              1 sectional sofa
+            </p>
             <p className="text-2xl px-8 font-semibold">TFCBLIGRBL6SRHS</p>
             <p className="text-2xl px-8 font-semibold">Solid Wood</p>
             <p className="text-2xl py-2 px-8 font-semibold">L-shaped</p>
             <p className="text-2xl py-2 px-8 font-semibold">Fabric + Cotton</p>
-            <p className="text-2xl py-2 px-8 font-semibold">Bright Grey & Lion</p>
-            <p className="text-2xl py-2 px-8 font-semibold">1 Year Manufacturing Warranty</p>
-
+            <p className="text-2xl py-2 px-8 font-semibold">
+              Bright Grey & Lion
+            </p>
+            <p className="text-2xl py-2 px-8 font-semibold">
+              1 Year Manufacturing Warranty
+            </p>
           </div>
           <div className="col-span-3 border-r border-t border-gray-300">
-          <p className="text-2xl py-12 px-8 font-semibold">1 Three Seater, 2 Single Seater</p>
+            <p className="text-2xl py-12 px-8 font-semibold">
+              1 Three Seater, 2 Single Seater
+            </p>
             <p className="text-2xl px-8 font-semibold">DTUBIGRBL568</p>
             <p className="text-2xl py-2 px-8 font-semibold">Solid Wood</p>
             <p className="text-2xl py-2 px-8 font-semibold">L-shaped</p>
             <p className="text-2xl py-2 px-8 font-semibold">Fabric + Cotton</p>
-            <p className="text-2xl py-2 px-8 font-semibold">Bright Grey & Lion</p>
+            <p className="text-2xl py-2 px-8 font-semibold">
+              Bright Grey & Lion
+            </p>
           </div>
-
         </div>
         <div className="bg-orange-100 grid grid-cols-12 h-64 mt-12 justify-center items-center gap-12">
           <div className="col-span-3 ml-24">
@@ -162,7 +184,6 @@ const Banner = () => {
               </div>
             </div>
           </div>
-          
         </div>
       </div>
     </div>

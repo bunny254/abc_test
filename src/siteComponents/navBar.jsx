@@ -11,18 +11,26 @@ const NavBar = () => {
         <div className="grid grid-cols-12 mt-6 items-center">
           <div className="col-span-2 px-24">
             <div className="flex gap-4">
-                <Link to="/" className="flex">
+              <Link to="/" className="flex">
                 <img src={logo} alt="Logo" />
-              <h1 className="font-bold text-4xl">Furniro</h1>
-                </Link>
+                <h1 className="font-bold text-4xl">Furniro</h1>
+              </Link>
             </div>
           </div>
           <div className="col-span-4 col-start-5">
             <div className="flex gap-16 text-2xl font-semibold">
-              <Link to="/"><p>Home</p></Link>
-              <Link to="/shop"><p>Shop</p></Link>
-              <Link to="/product-comparison"><p>About</p></Link>
-              <Link to="/contact-us"><p>Contact</p></Link>
+              <Link to="/">
+                <p>Home</p>
+              </Link>
+              <Link to="/shop">
+                <p>Shop</p>
+              </Link>
+              <Link to="/product-comparison">
+                <p>About</p>
+              </Link>
+              <Link to="/contact-us">
+                <p>Contact</p>
+              </Link>
             </div>
           </div>
           <div className="col-span-4 px-28">
@@ -30,7 +38,9 @@ const NavBar = () => {
               <FaRegUser size="28px" />
               <BiSearch size="32px" />
               <AiOutlineHeart size="32px" />
-              <Link to="/cart"><AiOutlineShoppingCart size="32px" /></Link>
+              <Link to="/cart">
+                <AiOutlineShoppingCart size="32px" />
+              </Link>
             </div>
           </div>
         </div>
