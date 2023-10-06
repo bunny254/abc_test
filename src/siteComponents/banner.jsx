@@ -5,7 +5,7 @@ import outdoor from "../assets/outdoor.png";
 import prize from '../assets/prize.png';
 import warrant from '../assets/warrant.png';
 import free from '../assets/free.png';
-import support from '../assets/support.png'
+import support from '../assets/support.png';
 
 const Banner = () => {
   return (
@@ -122,7 +122,7 @@ const Banner = () => {
           </div>
 
         </div>
-        <div className="bg-orange-100 grid grid-cols-12 h-64 mt-12 justify-center items-center">
+        <div className="bg-orange-100 grid grid-cols-12 h-64 mt-12 justify-center items-center gap-12">
           <div className="col-span-3 ml-24">
             <div className="flex">
               <img src={prize} alt="High Quality" />

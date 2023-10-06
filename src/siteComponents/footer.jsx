@@ -25,9 +25,9 @@ const Footer = () => {
                 </div>
                 <div className='col-span-2 mt-4'>
                     <p className='text-xl font-semibold text-gray-400'>Newsletter</p>
-                    <div className='flex items-center py-4'>
+                    <div className='flex items-center py-4 gap-2'>
                         <input type="email" name="" id="" placeholder='Enter Your Email Address' className='border-b border-gray-900' />
-                        <p className='font-bold underline'>SUBSCRIBE</p>
+                        <p className='font-bold underline mt-2'>SUBSCRIBE</p>
                     </div>
                 </div>
             </div>
